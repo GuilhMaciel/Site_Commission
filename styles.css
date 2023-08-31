@@ -86,14 +86,20 @@ body {
 .Menu__botao {
     font-size: 24px;
     text-decoration: none;
-    margin: 15px;
+    margin: 15px 20px;
     text-align: center;
     color: var(--cor-terciaria);
 }
 
 .Menu__contato {
-    font-size: 14px;
+    font-size: 18px;
 }
+
+.Menu__redes {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Estilos para as imagens */
 .Desenhos {
