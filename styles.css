@@ -1,0 +1,136 @@
+:root {
+    --cor-de-fundo: #FFD8A9;
+    --cor-secundaria: #FDEEDC;
+    --cor-terciaria: #864000;
+    --cor-destaque: #FF7A00;
+    --fonte-pricipal: 'League Spartan', sans-serif;
+}
+
+/* Estilos gerais */
+.container {
+    display: flex;
+}
+
+.Content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-pricipal);
+}
+
+.container {
+    display: flex;
+}
+
+.Content {
+    display: flex;
+    width: 100%;
+}
+
+/* Estilos para o menu */
+.Main-menu {
+    width: 250px;
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    display: block;
+}
+
+
+.Menu__caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Menu__nome {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--cor-terciaria);
+}
+
+.Menu__titulo {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--cor-destaque);
+}
+
+.Menu__icon {
+    width: 80%;
+    height: 80%;
+}
+
+.Menu__info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo);
+
+}
+
+.Menu__botao {
+    font-size: 24px;
+    text-decoration: none;
+    margin: 15px;
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+
+.Menu__contato {
+    font-size: 14px;
+}
+
+/* Estilos para as imagens */
+.Desenhos {
+    flex-grow: 1;
+    padding: 20px 30px;
+    background-color: var(--cor-de-fundo);
+    margin-left: 250px; /* Largura do menu */
+    box-sizing: border-box;
+}
+
+
+.Imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Imagens img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .Imagens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Desenhos {
+        flex-grow: 1;
+        padding: 20px 30px;
+        background-color: var(--cor-de-fundo);
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
