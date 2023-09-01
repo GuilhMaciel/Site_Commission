@@ -4,6 +4,7 @@
     --cor-terciaria: #864000;
     --cor-destaque: #FF7A00;
     --fonte-pricipal: 'League Spartan', sans-serif;
+    --dark:#333;
 }
 
 /* Estilos gerais */
@@ -23,30 +24,16 @@ body {
     font-family: var(--fonte-pricipal);
 }
 
-.container {
-    display: flex;
-}
-
-.Content {
-    display: flex;
-    width: 100%;
-}
-
 /* Estilos para o menu */
 .Main-menu {
     width: 250px;
     background-color: var(--cor-secundaria);
     padding: 20px;
     box-sizing: border-box;
-}
-
-.Fixed-menu {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     height: 100vh;
-    overflow-y: auto;
-    display: block;
 }
 
 
@@ -106,7 +93,7 @@ body {
     flex-grow: 1;
     padding: 20px 30px;
     background-color: var(--cor-de-fundo);
-    margin-left: 250px; /* Largura do menu */
+    margin: 5px; 
     box-sizing: border-box;
 }
 
@@ -137,6 +124,38 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+    .Content {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        width: auto;   
+    }
 
+    .Main-menu {    
+        display: flex;
+        background-color: var(--cor-secundaria);
+        width: 500px;
+        justify-content: space-between;
+    }
+
+    .Menu__caixa {
+        margin: 0 10px;
+    }
+
+    .Menu__info {
+        margin: 0 20px;
+    }
+    
+    .Imagens {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Desenhos {
+        flex-grow: 1;
+        padding: 20px 30px;
+        background-color: var(--cor-de-fundo);
+        box-sizing: border-box;
+    }
 }
+
