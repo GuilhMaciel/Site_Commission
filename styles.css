@@ -1,9 +1,13 @@
+@import url(about.css);
+@import url(commission.css);
+
+
 :root {
     --cor-de-fundo: #FFD8A9;
     --cor-secundaria: #FDEEDC;
     --cor-terciaria: #864000;
     --cor-destaque: #FF7A00;
-    --fonte-pricipal: 'League Spartan', sans-serif;
+    --fonte-principal: 'League Spartan', sans-serif;
     --dark:#333;
 }
 
@@ -21,12 +25,13 @@
 body {
     margin: 0;
     background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-pricipal);
+    font-family: var(--fonte-principal);
 }
 
 /* Estilos para o menu */
 .Main-menu {
     width: 250px;
+    min-width: 250px;
     background-color: var(--cor-secundaria);
     padding: 20px;
     box-sizing: border-box;
@@ -35,7 +40,6 @@ body {
     left: 0;
     height: 100vh;
 }
-
 
 .Menu__caixa {
     display: flex;
@@ -114,6 +118,7 @@ body {
 @media (max-width: 768px) {
     .Main-menu {
         width: 250px;
+        height: auto;
     }
     .Imagens {
         grid-template-columns: repeat(2, 1fr);
