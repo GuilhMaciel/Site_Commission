@@ -138,8 +138,13 @@ body {
     .Main-menu {    
         display: flex;
         background-color: var(--cor-secundaria);
-        width: 480px;
+        width:auto;
         justify-content: space-between;
+    }
+
+    .Menu__icon {
+        width: auto;
+        height: auto;
     }
 
     .Menu__caixa {
