@@ -1,5 +1,11 @@
 .commission {
-    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.commission__infos {
+    margin: 20px;
 }
 
 .commission__titulo {
@@ -22,15 +28,59 @@
 
 }
 
+.commission__aviso {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque);
+    display: flex;  
+    justify-content: center;
+    padding: 10px 0;
+}
 
-@media (max-width: 768px) {
+.commission__regras {
+    display: flex;
+}
+
+.commission__sub-titulo-regras {
+    color: var(--cor-destaque);
+    font-size: 38px;
+    margin: 5px;
+}
+.commission__texto-regras {
+    color: var(--cor-terciaria);
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 1024px) {
+    .commission {
+        display: block;
+    }
+
     .commission__texto {
         font-size: 22px;
     }
+
+    .commission__texto-regras {
+        padding: 3px 3px;
+    }
+    
 }
 
 @media (max-width: 480px) {
+    .commission {
+        display: block;
+    }
+
+    .commission__regras {
+        display: block;
+    }
+    
     .commission__texto {
         font-size: 24px;
+    }
+    
+    .commission__texto-regras {
+        padding: 10px 0;
     }
 }
