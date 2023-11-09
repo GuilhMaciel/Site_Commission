@@ -71,6 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--cor-de-fundo);
+    border-radius: 8px;
 
 }
 
