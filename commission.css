@@ -72,6 +72,10 @@
         margin-top: 10px;
         margin-left: 10px;
     }
+
+    .commission__regras-blocos {
+        width: 50%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -89,5 +93,9 @@
     
     .commission__texto-regras {
         padding: 10px 0;
+    }
+
+    .commission__regras-blocos {
+        width: 100%;
     }
 }
