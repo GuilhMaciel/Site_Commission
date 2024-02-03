@@ -113,13 +113,14 @@ body {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
+    border-radius: 2%;
 }
 
 
 @media (max-width: 768px) {
     .Main-menu {
         width: 250px;
-        height: auto;
+        height: 100vh;
     }
     .Imagens {
         grid-template-columns: repeat(2, 1fr);
@@ -144,7 +145,7 @@ body {
     .Main-menu {    
         display: flex;
         background-color: var(--cor-secundaria);
-        width:auto;
+        width: 100%;
         justify-content: space-between;
     }
 
@@ -154,7 +155,7 @@ body {
     }
 
     .Menu__info {
-        margin: 0 20px;
+        margin-left:20px;
     }
     
     .Imagens {
