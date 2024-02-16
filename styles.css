@@ -119,7 +119,7 @@ body {
 
 @media (max-width: 768px) {
     .Main-menu {
-        width: 250px;
+        width: 150px;
         height: 100vh;
     }
     .Imagens {
