@@ -58,14 +58,33 @@
 
 .commission__sub-titulo-regras {
     color: var(--cor-destaque);
-    font-size: 38px;
-    margin: 4px 5px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 .commission__texto-regras {
     color: var(--cor-terciaria);
     font-size: 24px;
-    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.commission__regras-termos {
+    background-color: var(--cor-secundaria);
+    width: 50%;
+    border-radius: 10px;
+}
+
+.commission__sub-titulo-termos {
+    color: var(--cor-destaque);
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.commission__texto-termos {
     margin: 10px;
+    color: var(--cor-terciaria);
+    font-size: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -98,22 +117,27 @@
 
     .commission__texto-regras {
         padding: 3px 3px;
+        font-size: 20px;
     }
     
     .commission__regras {
-        display: flex;
         margin-top: 10px;
         margin-left: 10px;
     }
 
-    .commission__regras-blocos {
-        width: 50%;
+    .commission__regras-termos {
+        width: 100%;
     }
-}
+
+} 
 
 @media (max-width: 480px) {
     .commission {
         display: block;
+    }
+
+    .commission__sub-titulo {
+        font-size: 30px;
     }
 
     .commission__infos__preco {
@@ -134,11 +158,8 @@
         font-size: 24px;
     }
     
-    .commission__texto-regras {
-        padding: 10px 0;
-    }
-
-    .commission__regras-blocos {
+    .commission__regras-termos {
         width: 100%;
     }
+
 }
