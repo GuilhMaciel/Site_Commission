@@ -63,7 +63,7 @@
 }
 .commission__texto-regras {
     color: var(--cor-terciaria);
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
     margin-left: 15px;
 }
@@ -73,6 +73,7 @@
     width: 50%;
     border-radius: 10px;
 }
+
 
 .commission__sub-titulo-termos {
     color: var(--cor-destaque);
@@ -86,6 +87,7 @@
     color: var(--cor-terciaria);
     font-size: 16px;
 }
+
 
 @media (max-width: 1024px) {
     .commission {
