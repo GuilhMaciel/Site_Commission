@@ -88,7 +88,17 @@ body {
 
 .Menu__redes {
     display: flex;
+    justify-content: space-around;
+}
+
+.Menu__redes-link {
+    display: flex;
     justify-content: center;
+    margin-bottom: 10px;
+}
+
+.Menu__redes-icon{
+    width: 50%;
 }
 
 
