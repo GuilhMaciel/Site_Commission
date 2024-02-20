@@ -99,6 +99,7 @@ body {
 
 .Menu__redes-icon{
     width: 50%;
+    max-width: 48px;
 }
 
 
